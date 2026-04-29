@@ -1,0 +1,129 @@
+.container {
+  background: #0f1419;
+  color: #e0e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(0, 204, 68, 0.1) 0%, transparent 100%);
+  border-bottom: 1px solid #2a3540;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 12px 0;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #00cc44;
+  margin: 0;
+}
+
+.ticketsSection {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.ticketsSection h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+
+.error {
+  color: #ff5555;
+}
+
+.ticketsTable {
+  background: #1a1f2a;
+  border: 1px solid #2a3540;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 50px 1fr 80px 150px 120px 100px;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #2a3540;
+  align-items: center;
+  font-size: 14px;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableRow:hover {
+  background: rgba(0, 204, 68, 0.05);
+}
+
+.tableRow div:first-child {
+  font-weight: 800;
+  color: #00cc44;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(0, 204, 68, 0.2);
+  color: #00cc44;
+}
+
+.premiumSection {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #1a1f2a;
+  border: 2px solid #ff8800;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.premiumSection h2 {
+  margin-top: 0;
+}
+
+.premiumButton {
+  background: #ff8800;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.premiumButton:hover {
+  background: #ff9911;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .tableRow {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
